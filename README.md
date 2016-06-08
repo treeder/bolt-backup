@@ -14,7 +14,14 @@ First get the lib:
 go get github.com/treeder/bolt-backup
 ```
 
-Then use the Open function, very similar to `bolt.Open`:
+Then set your AWS credentials as the following environment variables:
+
+```
+AWS_ACCESS_KEY=x
+AWS_SECRET_KEY=y
+```
+
+Now you can use the Open function, very similar to `bolt.Open`:
 
 ```go
 package main
